@@ -4,36 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-
+    <title>My GitHub Pages Site</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 10%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
             background: #2563eb;
             color: white;
-            font-family: Arial, sans-serif;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero a {
+            background: white;
+            color: #2563eb;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 55px 20px;
             text-align: center;
         }
 
-        h1 {
-            font-size: 50px;
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        p {
-            font-size: 20px;
+        .card {
+            background: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div>
+
+    <header>
+        <b>My Website</b>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
         <h1>Welcome!</h1>
-        <p>My first GitHub Pages website.</p>
+        <p>A simple website hosted using GitHub Pages.</p>
+        <br>
+        <a href="#about">Learn More</a>
     </div>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This project demonstrates Git, GitHub, branches, merging and GitHub Pages.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Git</h3>
+                <p>Version control.</p>
+            </div>
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Repository and collaboration.</p>
+            </div>
+            <div class="card">
+                <h3>Pages</h3>
+                <p>Free website hosting.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My GitHub Pages Project</p>
+    </footer>
+
 </body>
 
 </html>
